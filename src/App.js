@@ -6,16 +6,11 @@ function App() {
   const [firstName, setfirstName] = useState("");
   const [lastName, setlastName] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [formErrors, setFormErrors] = useState({
-    firstName: '',
-    lastName: ''
-  });
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted((p) => !p);
-    setfirstName('');
-    setlastName('');
   }
 
 
